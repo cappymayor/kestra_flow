@@ -1,0 +1,10 @@
+    id: aws_s3_create_bucket
+    namespace: company.deng
+
+    tasks:
+      - id: create_bucket
+        type: io.kestra.plugin.aws.s3.CreateBucket
+        accessKeyId: "<access-key>"
+        secretKeyId: "<secret-key>"
+        region: "eu-central-1"
+        bucket: "my-zion"
